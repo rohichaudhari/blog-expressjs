@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-300 p-8">
+    <div class="max-w-4xl mx-auto">
+        <!-- Edit Form Section -->
+        <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
+            <h2 class="text-3xl font-semibold text-gray-800 mb-4">Edit Profile</h2>
+            <form action="/api/profile/<%= profile._id %>/edit" method="post">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- First Name Field -->
+                    <div>
+                        <label for="title" class="block text-sm font-medium text-gray-700">Title</label>
+                        <input type="text" id="title" name="title" value="<%= profile.title %>" placeholder="Update title...." class="mt-2 p-3 w-full border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                    <!-- Last Name Field -->
+                    <div>
+                        <label for="description" class="block text-sm font-medium text-gray-700">Description</label>
+                        <input type="text" id="description" name="description" value="<%= profile.description%>" placeholder="update Description..." class="mt-2 p-3 w-full border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="mt-6">
+                    <button type="submit" class="bg-indigo-600 text-white px-5 py-3 rounded-md font-medium hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500">Update Profile</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

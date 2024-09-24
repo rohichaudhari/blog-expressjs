@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
+</head>
+<body class="bg-gray-700 text-white flex justify-center mt-16">
+  <div class="border-solid border-4 border-white h-[600px] w-[500px] bg-blue-700 rounded-lg lg:mx-auto">
+  <div class="text-center mt-20 ">
+    <h1 class="text-3xl font-bold underline">REGISTRATION FORM</h1>
+    <form method="POST" class="mt-10" action="/api/users/register">
+      
+      <div>
+        <label class="text-2xl" for="firstName">Firstname:</label><br>
+        <input class="bg-white rounded-md w-80 h-10 text-gray-700 font-bold" type="text" name="firstName" id="firstName" required placeholder="Enter Firstname...." />
+        
+      </div>
+      
+      <div>
+        <label class="text-2xl" for="lastName">Lastname:</label><br>
+        <input class="bg-white rounded-md w-80 h-10 text-gray-700 font-bold" type="text" name="lastName" id="lastName" required placeholder="Enter lastname..." />
+      </div>
+      
+      <div>
+        <label class="text-2xl" for="email">Email:</label><br>
+        <input class="bg-white rounded-md w-80 h-10 text-gray-700 font-bold" type="email" name="email" id="email" required placeholder="Enter Email...." />
+      </div>
+
+      
+      <div>
+        <label class="text-2xl" for="password">password</label><br>
+        <input class="text-gray-700 bg-white rounded-md w-80 h-10 text-gray-700 font-bold" type="password" name="password" id="password" required placeholder=" Enter Password...."/>
+      </div>
+      <div>
+        <br>
+        
+
+        <button class="border-2 w-40 font-bold rounded-lg " type="submit">Register</button><br><br>
+        <a href="/api/users/login">Already have an account?</a>
+      </div>
+    </form>
+  </div>
+</div>
+</body>
+</html>
+    
+
+
+      

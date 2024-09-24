@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-700 flex justify-center">
+    <div class="bg-blue-700 text-white text-center w-[500px] h-[400px] border-2 border-white mt-28 p-5 rounded-md">
+      <div>
+        <h1 class="text-4xl underline">Welcome to login page</h1>
+        <p class="font-bold ">Please login to your account</p>
+      </div>
+      <form method="POST" class="mt-5" action="/api/users/login">
+        <div>
+          <label class="text-2xl" for="email">Email:</label><br>
+          <input class="bg-white rounded-md w-80 h-10" type="email" name="email" id="email" required placeholder="Enter Email...." />
+        </div>
+  
+        
+        <div>
+          <label class="text-2xl" for="password">password:</label><br>
+          <input class="text-gray-700 bg-white rounded-md w-80 h-10" type="password" name="password" id="password" required placeholder=" Enter Password...."/>
+        </div>
+        <div>
+          <br>
+          <div>
+            <button class="border-2 w-40 font-bold rounded-lg" type="submit">Login</button>
+          </div>
+        </form>
+        <div class="mt-2 text-center">
+          <a href="/api/users/register">Don't have an account? Sign up</a>
+        </div>
+      </div>
+    
+    </body>
+    </html>
+
+      
+
+     
+
